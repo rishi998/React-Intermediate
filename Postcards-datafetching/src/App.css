@@ -1,0 +1,10 @@
+.postcard{
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  width: 50vh;
+  height: auto;
+  position: relative;
+  background-color: antiquewhite;
+  padding: 5px;
+}
