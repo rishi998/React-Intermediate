@@ -13,7 +13,7 @@ export default function App() {
 
   function handleclick(e) {
     e.preventDefault();
-    window.location.reload();
+    getuser().then((user) => setuser(user));
   }
 
   useEffect(() => {
