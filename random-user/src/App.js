@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-const getUser = async () => {
+const getuser = async () => {
   const response = await fetch("https://randomuser.me/api/", {
     method: "GET",
   });
@@ -11,49 +11,52 @@ const getUser = async () => {
 export default function App() {
   const [user, setuser] = useState(null);
 
+  function handleclick(e) {
+    e.preventDefault();
+    window.location.reload();
+  }
+
   useEffect(() => {
-    getUser().then((user) => setuser(user));
+    getuser().then((user) => setuser(user));
   }, []);
-
-  return <div>{user ? <Userinfo user={user} /> : <p>loading...</p>}</div>;
-}
-
-function Userinfo({ user }) {
   return (
-    <div>
-      <Userimg user={user} />
-      <Usern user={user} />
-      <Restinfo user={user} />
-    </div>
+    <>
+      {user ? <Usercard user={user} handleclick={handleclick} /> : "Loading..."}
+    </>
   );
 }
 
-function Userimg({ user }) {
+function Usercard({ user, handleclick }) {
   return (
-    <div>
-      <img src={user.results[0].picture.large} alt="loading"></img>
-    </div>
-  );
-}
-
-function Usern({ user }) {
-  return (
-    <div>
-      <h3>Hi, my name is</h3>
-      <h2>
-        {user.results[0].name.first} {user.results[0].name.last}
-      </h2>
-    </div>
-  );
-}
-
-function Restinfo({ user }) {
-  return (
-    <div>
-      <span>{user.results[0].email}</span>
-      <span>{user.results[0].dob.date}</span>
-      <span>{user.results[0].phone}</span>
-      <span>{user.results[0].city}</span>
+    <div className="container">
+      <img src={user.results[0].picture.large} alt="User"></img>
+      <div className="name">
+        <h1>
+          {user.results[0].name.title} {user.results[0].name.first}{" "}
+          {user.results[0].name.last}
+        </h1>
+      </div>
+      <div className="phone">
+        <h3>{user.results[0].phone}</h3>
+      </div>
+      <div>
+        <h3 className="email">{user.results[0].email}</h3>
+      </div>
+      <div className="restinfo">
+        <span>
+          <h3>{user.results[0].location.city}</h3>
+        </span>
+        <span>
+          <h3>{user.results[0].location.country}</h3>
+        </span>
+        <span>
+          <h3>{user.results[0].location.postcode}</h3>
+        </span>
+      </div>
+      <br />
+      <div className="btn">
+        <button onClick={(e) => handleclick(e)}>Refresh</button>
+      </div>
     </div>
   );
 }

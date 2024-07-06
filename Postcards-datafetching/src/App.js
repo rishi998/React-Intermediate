@@ -20,7 +20,7 @@ export default function App() {
       {data ? (
         data.map((data) => <Databox data={data} key={data.id} />)
       ) : (
-        <p>NO data</p>
+        <p>NO DATA</p>
       )}
     </div>
   );

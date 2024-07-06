@@ -1,0 +1,57 @@
+*{
+  margin: 0px;
+}
+
+.container{
+  border: 1px solid black;
+  border-radius: 30px;
+  border-style: hidden;
+  background-color: rgb(224, 169, 102);
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  width: 40vh;
+  height: auto;
+  padding: 20px 50px;
+  margin: 40px auto auto auto ;
+}
+
+img{
+  width: 30vh;
+  height: auto;
+  border-radius: 100%;
+  margin: 0px auto 20px auto;
+}
+
+.name{
+  margin: 20px auto;
+
+}
+.restinfo{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.restinfo h3{
+  margin: 5px;
+}
+.phone{
+  margin: 10px;
+}
+.btn{
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 20vh;
+  height: 4vh;
+  padding: 5px 10px 5px 60px;
+  background-color:chocolate;
+  border-style:hidden;
+}
+button{
+  font-weight: bold;
+  border: none;
+  font-size: 1.6rem;
+  background-color:chocolate;
+}
