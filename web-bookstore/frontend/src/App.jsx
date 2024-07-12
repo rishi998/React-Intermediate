@@ -1,10 +1,12 @@
-import React from "react";
-import Navbar from "./components/navbar";
+import "./App.css";
+
 function App() {
   return (
-    <div className="text-3xl font-bold underline">
-      <Navbar />
-    </div>
+    <>
+      <div>
+        <h1 className="text-3xl font-bold no-underline">Hello world!</h1>
+      </div>
+    </>
   );
 }
 
