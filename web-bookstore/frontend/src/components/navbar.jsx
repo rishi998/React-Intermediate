@@ -1,24 +1,47 @@
+import { useEffect, useState } from "react";
+
 export default function Navbar() {
+  const [sticky, setsticky] = useState(false);
+
+  useEffect(() => {
+    const handlescroll = () => {
+      if (window.scrollY > 0) {
+        setsticky(true);
+      } else {
+        setsticky(false);
+      }
+    };
+    window.addEventListener("scroll", handlescroll);
+    return () => {
+      window.removeEventListener("scroll", handlescroll);
+    };
+  }, []);
   const Navitems = (
     <>
       <li>
-        <a>Home</a>
+        <a className="font-bold">Home</a>
       </li>
       <li>
-        <a>Course</a>
+        <a className="font-bold">Course</a>
       </li>
       <li>
-        <a>About</a>
+        <a className="font-bold">About</a>
       </li>
       <li>
-        <a>Contact</a>
+        <a className="font-bold">Contact</a>
       </li>
     </>
   );
   return (
     <>
-      <div className="max-w-screen-2x1 container mx-auto md:pd-20 px-4">
-        <div className="navbar bg-base-100">
+      <div
+        className={`max-w-screen-2xl container mx-auto md:pd-20 px-4 fixed top-0 left-0 right-0 ${
+          sticky
+            ? "sticky-navbar shadow-md bg-base-200 transition-all ease-in-out"
+            : ""
+        }`}
+      >
+        <div className="navbar">
           <div className="navbar-start">
             <div className="dropdown">
               <div
@@ -43,7 +66,7 @@ export default function Navbar() {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                className=" menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
               >
                 {Navitems}
               </ul>
