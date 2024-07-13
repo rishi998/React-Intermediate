@@ -1,12 +1,17 @@
-import Navbar from "./components/navbar";
-import Banner from "./components/banner";
-import Footer from "./components/footer";
+import React from "react";
+import Home from "./homepage/home";
+import Course from "./components/course";
+import { Route, Routes } from "react-router-dom";
+
 function App() {
   return (
     <>
-      <Navbar />
-      <Banner />
-      <Footer />
+      {/* <Home />
+      <Course /> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/course" element={<Course />} />
+      </Routes>
     </>
   );
 }

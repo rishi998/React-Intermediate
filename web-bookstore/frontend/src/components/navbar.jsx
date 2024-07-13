@@ -19,10 +19,14 @@ export default function Navbar() {
   const Navitems = (
     <>
       <li>
-        <a className="font-bold">Home</a>
+        <a href="/" className="font-bold">
+          Home
+        </a>
       </li>
       <li>
-        <a className="font-bold">Course</a>
+        <a href="/course" className="font-bold">
+          Course
+        </a>
       </li>
       <li>
         <a className="font-bold">About</a>
@@ -35,9 +39,9 @@ export default function Navbar() {
   return (
     <>
       <div
-        className={`max-w-screen-2xl container mx-auto md:pd-20 px-4 fixed top-0 left-0 right-0 ${
+        className={`max-w-screen-2xl container mx-auto md:pd-20 px-4 fixed top-0 left-0 right-0 z-50 ${
           sticky
-            ? "sticky-navbar shadow-md bg-base-200 transition-all ease-in-out"
+            ? "sticky-navbar shadow-md bg-base-200 transition-all ease-in-out "
             : ""
         }`}
       >

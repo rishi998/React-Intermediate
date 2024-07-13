@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Story",
+    "title": "Enjoy the Tale",
+    "price": 0,
+    "category": "free",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1720836200~exp=1720839800~hmac=e896e142db09bcbee1fb1abb5ac9e3e6887b34867c9da8f1d3f78e2e33f7b7db&w=740"
+  },
+  {
+    "id": 2,
+    "name": "Music",
+    "title": "Melodies of Life",
+    "price": 0,
+    "category": "free",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1720836200~exp=1720839800~hmac=e896e142db09bcbee1fb1abb5ac9e3e6887b34867c9da8f1d3f78e2e33f7b7db&w=740"
+  },
+  {
+    "id": 3,
+    "name": "Therapy",
+    "title": "Healing the Soul",
+    "price": 0,
+    "category": "free",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1720836200~exp=1720839800~hmac=e896e142db09bcbee1fb1abb5ac9e3e6887b34867c9da8f1d3f78e2e33f7b7db&w=740"
+  },
+  {
+    "id": 4,
+    "name": "Trends",
+    "title": "What's Hot Now",
+    "price": 0,
+    "category": "free",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1720836200~exp=1720839800~hmac=e896e142db09bcbee1fb1abb5ac9e3e6887b34867c9da8f1d3f78e2e33f7b7db&w=740"
+  },
+  {
+    "id": 5,
+    "name": "Self Growth",
+    "title": "Becoming Your Best Self",
+    "price": 0,
+    "category": "Development",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1720836200~exp=1720839800~hmac=e896e142db09bcbee1fb1abb5ac9e3e6887b34867c9da8f1d3f78e2e33f7b7db&w=740"
+  },
+  {
+    "id": 6,
+    "name": "Technology",
+    "title": "Future Tech",
+    "price": 0,
+    "category": "free",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1720836200~exp=1720839800~hmac=e896e142db09bcbee1fb1abb5ac9e3e6887b34867c9da8f1d3f78e2e33f7b7db&w=740"
+  },
+  {
+    "id": 7,
+    "name": "Fitness",
+    "title": "Stay Fit",
+    "price": 15,
+    "category": "Health",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1720836200~exp=1720839800~hmac=e896e142db09bcbee1fb1abb5ac9e3e6887b34867c9da8f1d3f78e2e33f7b7db&w=740"
+  },
+  {
+    "id": 8,
+    "name": "Travel",
+    "title": "Explore the World",
+    "price": 25,
+    "category": "Adventure",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1720836200~exp=1720839800~hmac=e896e142db09bcbee1fb1abb5ac9e3e6887b34867c9da8f1d3f78e2e33f7b7db&w=740"
+  },
+  {
+    "id": 9,
+    "name": "Cooking",
+    "title": "Delicious Recipes",
+    "price": 5,
+    "category": "Food",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1720836200~exp=1720839800~hmac=e896e142db09bcbee1fb1abb5ac9e3e6887b34867c9da8f1d3f78e2e33f7b7db&w=740"
+  },
+  {
+    "id": 10,
+    "name": "Finance",
+    "title": "Wealth Building",
+    "price": 40,
+    "category": "Business",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1720836200~exp=1720839800~hmac=e896e142db09bcbee1fb1abb5ac9e3e6887b34867c9da8f1d3f78e2e33f7b7db&w=740"
+  },
+  {
+    "id": 11,
+    "name": "Gardening",
+    "title": "Green Thumb",
+    "price": 8,
+    "category": "Hobby",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1720836200~exp=1720839800~hmac=e896e142db09bcbee1fb1abb5ac9e3e6887b34867c9da8f1d3f78e2e33f7b7db&w=740"
+  }
+]
