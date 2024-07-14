@@ -1,6 +1,6 @@
 function Card({ item }) {
   return (
-    <div className="mt-4 my-3 p-3">
+    <div className="mt-4 my-3 p-3 dark:bg-slate-900 dark:text-white">
       <div className="max-w-screen-2xl container mx-auto md:pd-20 px-4 dark:bg-slate-900 dark:text-black">
         <div className="card bg-base-100 w-76 shadow-xl hover:scale-105 transition-transform duration-300">
           <figure>

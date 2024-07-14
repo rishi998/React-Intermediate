@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-
+import Login from "./login";
+import { Link } from "react-router-dom";
 export default function Navbar() {
   const [theme, settheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
@@ -39,29 +40,29 @@ export default function Navbar() {
   const Navitems = (
     <>
       <li>
-        <a href="/" className="font-bold">
+        <a href="/" className="font-bold text-lg">
           Home
         </a>
       </li>
       <li>
-        <a href="/course" className="font-bold">
+        <a href="/course" className="font-bold text-lg">
           Course
         </a>
       </li>
       <li>
-        <a className="font-bold">About</a>
+        <a className="font-bold text-lg">About</a>
       </li>
       <li>
-        <a className="font-bold">Contact</a>
+        <a className="font-bold text-lg">Contact</a>
       </li>
     </>
   );
   return (
     <>
       <div
-        className={`max-w-screen-2xl container mx-auto md:pd-20 px-4 fixed top-0 left-0 right-0 z-50 dark:text-black ${
+        className={`max-w-screen-2xl container mx-auto md:pd-20 px-4 fixed top-0 left-0 right-0 z-50 dark:bg-slate-900 dark:text-white ${
           sticky
-            ? "sticky-navbar shadow-md bg-base-200 transition-all ease-in-out dark:text-black"
+            ? "sticky-navbar shadow-md bg-base-200 transition-all ease-in-out dark:text-white"
             : ""
         }`}
       >
@@ -151,9 +152,15 @@ export default function Navbar() {
               </svg>
             </label>
             <div>
-              <a className="bg-black text-white p-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer px-3 py-2">
+              <a
+                className="bg-black text-white p-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer px-3 py-2 "
+                onClick={() =>
+                  document.getElementById("my_modal_3").showModal()
+                }
+              >
                 Login
               </a>
+              <Login />
             </div>
           </div>
         </div>
