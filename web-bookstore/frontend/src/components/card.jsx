@@ -1,15 +1,15 @@
 function Card({ item }) {
   return (
     <div className="mt-4 my-3 p-3">
-      <div className="max-w-screen-2xl container mx-auto md:pd-20 px-4">
-        <div className="card bg-base-100 w-96 shadow-xl hover:scale-105 transition-transform duration-300">
+      <div className="max-w-screen-2xl container mx-auto md:pd-20 px-4 dark:bg-slate-900 dark:text-black">
+        <div className="card bg-base-100 w-76 shadow-xl hover:scale-105 transition-transform duration-300">
           <figure>
             <img src={item.image} alt="Shoes" />
           </figure>
           <div className="card-body">
             <h2 className="card-title">
               {item.name}
-              <div className="badge badge-secondary">NEW</div>
+              <div className="badge badge-secondary ">NEW</div>
             </h2>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste

@@ -1,9 +1,9 @@
-import books from "../../public/books.jpg";
+import books from "../../public/books.png";
 export default function Banner() {
   return (
     <>
-      <div className="max-w-screen-2x1 container mx-auto md:pd-20 px-6 flex flex-col md:flex-row my-10 ">
-        <div className="order-2 md:order-1 w-full md:w-1/2 mt-12 md:mt-32">
+      <div className="max-w-screen-2xl container mx-auto md:p-20 px-6 flex flex-col md:flex-row my-10 ">
+        <div className="order-2 md:order-1 w-full md:w-1/2 mt-12 md:mt-28">
           <div className="space-y-12">
             <h1 className="text-4xl font-bold">
               Hello, Welcome here to learn something{" "}
@@ -28,10 +28,10 @@ export default function Banner() {
               <input type="text" className="grow" placeholder="Email" />
             </label>
           </div>
-          <button className="btn mt-6 btn-secondary">Secondary</button>
+          <button className="btn mt-6 btn-secondary">View More</button>
         </div>
         <div className="order-1 w-full md:w-1/2">
-          <img src={books} className="w-92 h-92" alt="" />
+          <img src={books} className="w-full h-full" alt="" />
         </div>
       </div>
     </>

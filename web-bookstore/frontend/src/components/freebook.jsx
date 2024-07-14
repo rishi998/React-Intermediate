@@ -19,7 +19,7 @@ export default function Freebook() {
     <>
       <div className="max-w-screen-2xl container mx-auto md:pd-20 px-4 ">
         <div>
-          <h1 className="font-semibold text-xl pb-5 ">Free Books offered</h1>
+          <h1 className="font-semibold text-xl pb-5">Free Books offered</h1>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis,
             in officiis! Voluptate, accusamus? Dicta excepturi odit ducimus

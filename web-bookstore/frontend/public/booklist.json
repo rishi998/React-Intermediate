@@ -86,5 +86,13 @@
     "price": 8,
     "category": "Hobby",
     "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1720836200~exp=1720839800~hmac=e896e142db09bcbee1fb1abb5ac9e3e6887b34867c9da8f1d3f78e2e33f7b7db&w=740"
+  },
+  {
+    "id": 12,
+    "name": "Universe",
+    "title": "Milkey Way",
+    "price": 12,
+    "category": "Cosmos",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1720836200~exp=1720839800~hmac=e896e142db09bcbee1fb1abb5ac9e3e6887b34867c9da8f1d3f78e2e33f7b7db&w=740"
   }
 ]
