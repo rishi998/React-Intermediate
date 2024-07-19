@@ -1,13 +1,37 @@
 import { Link } from "react-router-dom";
 import Login from "./login";
 import { useForm } from "react-hook-form";
+import axios from "axios";
 function Signup() {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+
+  const onSubmit = async (data) => {
+    const userInfo = {
+      fullname: data.fullname,
+      email: data.email,
+      password: data.password,
+    };
+    try {
+      const res = await axios.post(
+        "http://localhost:4001/user/signup",
+        userInfo
+      );
+      if (res.data) {
+        console.log(res.data);
+        alert("Signup Successful");
+      }
+      localStorage.setItem("users", JSON.stringify(res.data));
+    } catch (error) {
+      if (error.response) {
+        console.log(error);
+        alert("Error: " + error.response.data.message);
+      }
+    }
+  };
   return (
     <>
       <div className="flex h-screen items-center justify-center">
@@ -30,9 +54,9 @@ function Signup() {
                   type="text"
                   placeholder="Enter you name"
                   className="w-80 px-3 border rounded-md outline-none"
-                  {...register("name", { required: true })}
+                  {...register("fullname", { required: true })}
                 />
-                {errors.name && (
+                {errors.fullname && (
                   <span className="text-sm text-red-500">
                     This field is required
                   </span>

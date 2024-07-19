@@ -1,29 +1,46 @@
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
-
+import axios from "axios";
+import toast from "react-hot-toast";
 function Login() {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = async (data) => {
+    const userInfo = {
+      email: data.email,
+      password: data.password,
+    };
+    try {
+      const res = await axios.post(
+        "http://localhost:4001/user/login",
+        userInfo
+      );
+      if (res.data) {
+        console.log(res.data);
+        toast.success("Logged In Successfully");
+      }
+      localStorage.setItem("users", JSON.stringify(res.data));
+    } catch (error) {
+      if (error.response) {
+        console.log(error);
+        toast.error(error.response.message);
+      }
+    }
+  };
   return (
     <div className="text-xl">
       <dialog id="my_modal_3" className="modal">
         <div className="modal-box">
           <form onSubmit={handleSubmit(onSubmit)} method="dialog">
-            {/* if there is a button in form, it will close the modal */}
             <Link
               to="/"
               className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
             >
               ✕
             </Link>
-            {/* <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
-              ✕
-            </button> */}
-
             <h3 className="font-bold text-lg">LOGIN</h3>
             <div className="mt-4 space-y-3">
               <span className="font-semibold">Email</span>
